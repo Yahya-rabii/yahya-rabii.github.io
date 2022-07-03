@@ -60,5 +60,6 @@ ip.onreadystatechange = (e) => {
     }
 }
 
+
 //document.getElementsByClassName('col-lg-7')[0].className = '';
 //document.getElementsByTagName('img')[0].hidden = true;

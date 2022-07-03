@@ -85,6 +85,7 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    display: block;
 }
 .navbar.sticky{
     padding: 15px 0;
