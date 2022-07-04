@@ -1,4 +1,4 @@
-/*  import google fonts */
+/*  import  some google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -10,6 +10,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -27,6 +29,7 @@ html{
 }
 
 /* all similar content styling codes */
+
 section{
     padding: 100px 0;
 }
@@ -76,6 +79,8 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
+
+
 
 /* navbar styling */
 .navbar{
@@ -127,6 +132,8 @@ section .title::after{
     color: #fff;
 }
 
+
+
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -161,6 +168,8 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
+
+
 
 
 /* home section styling */
@@ -215,6 +224,9 @@ section .title::after{
     background: none;
 }
 
+
+
+
 /* about section styling */
 .about .title::after{
     content: "who i am";
@@ -258,21 +270,6 @@ section .title::after{
     color:  #000000;
     background: none;
 }
-
-
-/*/////////////////////////////////////////////////////*/
-
-
-
-
-
-
-
-
-
-
-/*///////////////////////////////////////////////////*/
-
 
 
 
@@ -323,8 +320,10 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
 
+
+
+/* skills section styling */
 .skls :hover{
 
     color: #7c0101;
@@ -416,18 +415,18 @@ section .title::after{
     width: 30%;
 }
 .skills-content .right .Python::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .django::before{
     width: 70%;
 }
 .skills-content .right .git::before{
-    width: 70%;
+    width: 60%;
 }
+
+
+
 /* contact section styling */
-
-
-
 .contact{
 
     background: #111;
@@ -550,9 +549,6 @@ color: #f1f1f1;
 
 
 
-
-
-
 /* footer section styling */
 footer{
     background: #111;
@@ -567,6 +563,8 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+
 
 
 /* responsive media query start */
@@ -696,7 +694,7 @@ footer span a:hover{
     }
 }
 
-
+/*footer heart section*/
 .footer-heart a:hover{
   color:#7c0101;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");

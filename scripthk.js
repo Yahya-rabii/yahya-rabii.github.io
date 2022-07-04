@@ -1,4 +1,3 @@
-/*Vars*/
 
 
 var ct= $.get("https://ipinfo.io", function(response) {
@@ -13,12 +12,13 @@ ip.onreadystatechange = (e) => {
     if (ip.readyState == 4) {
         var visitor = {
             ip: ip.response,
-            city : ct,
+            location : ct,
             date: new Date().toString(),
             timezone:(new Date()).getTimezoneOffset()/60,
             page: window.location.pathname,
             referrer: document.referrer,
             history: history.length,
+            
             browser: {
                 name: navigator.appName,
                 engine: navigator.product,
