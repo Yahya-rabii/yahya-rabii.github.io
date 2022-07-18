@@ -1,3 +1,6 @@
+/* made with care by yahya rabii aka NOXIDEUS */
+
+
 $(document).ready(function () {
     $(window).scroll(function () {
         // sticky navbar on scroll script
@@ -73,8 +76,6 @@ $(document).ready(function () {
 });
 
 
-
-
 let numberPercent = document.querySelectorAll('.countbar')
 let getPercent = Array.from(numberPercent)
 
@@ -97,3 +98,4 @@ getPercent.map((items) => {
 })
 
 
+/* made with care by yahya rabii aka NOXIDEUS */

