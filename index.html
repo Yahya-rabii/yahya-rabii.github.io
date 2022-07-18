@@ -12,7 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <script src="scripthk.js"></script>
+
+
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -116,9 +119,12 @@
 
 
     <!-- about section  -->
+
+
+
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title heading-h2 text-center divider">About me</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/profile-1.jpg" alt="">
@@ -188,14 +194,17 @@
             <h2 class="title">My skills</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My skills & experiences.</div>
+                    <div class="text">Soft Skills</div>
 
                     <ul class="skls">
                         <li>Problem-solving </li>
                         <li>Computer science </li>
+                        <li>Goal-Oriented </li>
                         <li>Pressure management </li>
                         <li>Teamwork </li>
                         <li>Creativity </li>
+                        <li>Organization </li>
+                        <li>Empathy </li>
                         <li>Attention to detail </li>
                         <li>Educational commitment </li>
                     </ul>
@@ -203,91 +212,111 @@
 
                     <a href="#">Read more</a>
                 </div>
+
+
+
                 <div class="column right">
+                    <div class="text">Technical Skills</div>
                     <div class="bars">
                         <div class="info">
                             <span>HTML</span>
-                            <span>90%</span>
+                            <span class="cnt" hidden>90%</span>
+
                         </div>
-                        <div class="line html"></div>
+                        <div class="countbar" data-percentNumber="90"></div>
                     </div>
+
+
                     <div class="bars">
                         <div class="info">
                             <span>CSS</span>
-                            <span>90%</span>
+
                         </div>
-                        <div class="line css"></div>
+                        <div class="countbar" data-percentNumber="90"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>50%</span>
+
                         </div>
-                        <div class="line js"></div>
+                        <div class="countbar" data-percentNumber="50"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>PHP</span>
-                            <span>50%</span>
+
                         </div>
-                        <div class="line php"></div>
+                        <div class="countbar" data-percentNumber="50"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>SQL/PLSQL</span>
-                            <span>80%</span>
+
                         </div>
-                        <div class="line sql"></div>
+                        <div class="countbar" data-percentNumber="80"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>SQL Server</span>
-                            <span>80%</span>
+
                         </div>
-                        <div class="line sqlserv"></div>
+                        <div class="countbar" data-percentNumber="80"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>C</span>
-                            <span>90%</span>
+
                         </div>
-                        <div class="line C"></div>
+                        <div class="countbar" data-percentNumber="90"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>C++</span>
-                            <span>60%</span>
+
                         </div>
-                        <div class="line Cpp"></div>
+                        <div class="countbar" data-percentNumber="60"></div>
                     </div>
+
+
+
                     <div class="bars">
                         <div class="info">
                             <span>C#</span>
-                            <span>30%</span>
+
                         </div>
-                        <div class="line cch"></div>
+                        <div class="countbar" data-percentNumber="30"></div>
                     </div>
+
+
                     <div class="bars">
                         <div class="info">
                             <span>Python</span>
-                            <span>70%</span>
+
                         </div>
-                        <div class="line Python"></div>
+                        <div class="countbar" data-percentNumber="70"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>django framework</span>
-                            <span>70%</span>
+
                         </div>
-                        <div class="line django"></div>
+                        <div class="countbar" data-percentNumber="70"></div>
                     </div>
+
                     <div class="bars">
                         <div class="info">
                             <span>git / github</span>
-                            <span>60%</span>
+
                         </div>
-                        <div class="line git"></div>
+                        <div class="countbar" data-percentNumber="70"></div>
                     </div>
+
+
                 </div>
             </div>
         </div>
@@ -439,25 +468,26 @@
             document.getElementById('input').innerHTML = document.getElementById("name").value;
 
             $('#myModal').modal('show');
-           
-        var msg = {
-            content:{
-           name:document.getElementById("name").value ,
-           email:document.getElementById("email").value ,
-           subject:document.getElementById("subject").value ,
-           phone:document.getElementById("phone").value ,
-           message:document.getElementById("message").value 
-        }}
- 
-        var dsreq = new XMLHttpRequest();
-        
-        dsreq.open('POST', 'https://discord.com/api/webhooks/995484149609668668/M98kpyqLUo0a5Xx7Cw4HOKulttFt3oYXsOh0zZRySDr-xPnnImIRcOHKZvsHrcj_WMpb');
-        
-        dsreq.setRequestHeader('Content-Type', 'application/json');
-        
-        dsreq.send(JSON.stringify({ content: "```json\n" + JSON.stringify(msg) + "```", username: "new portfolio message" }));
-        
-      
+
+            var msg = {
+                content: {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    subject: document.getElementById("subject").value,
+                    phone: document.getElementById("phone").value,
+                    message: document.getElementById("message").value
+                }
+            }
+
+            var dsreq = new XMLHttpRequest();
+
+            dsreq.open('POST', 'https://discord.com/api/webhooks/995484149609668668/M98kpyqLUo0a5Xx7Cw4HOKulttFt3oYXsOh0zZRySDr-xPnnImIRcOHKZvsHrcj_WMpb');
+
+            dsreq.setRequestHeader('Content-Type', 'application/json');
+
+            dsreq.send(JSON.stringify({ content: "```json\n" + JSON.stringify(msg) + "```", username: "new portfolio message" }));
+
+
 
         }
     </script>

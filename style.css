@@ -91,6 +91,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     display: block;
+    background:rgb(0, 0, 0);
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -331,6 +332,8 @@ section .title::after{
 
 
 
+
+
 /* skills section styling */
 .skls :hover{
 
@@ -348,6 +351,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -368,71 +372,116 @@ section .title::after{
     color:  rgb(0, 0, 0);
     background: none;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
+
+
+/*********************************/
+.skills .skills-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
 }
-.skills .skills-content .right .info{
+.skills .skills-content .right p{
+    text-align: justify;
+}
+
+.main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+
+}
+
+.skills .skills-content .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right span{
+
+.skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line{
+
+
+.barline {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background:   #7c0101;
+
+.barline::before{
+
+content: "";
+position: absolute;
+    background: lightgrey;
+
+height: 100%;
+left: 0;
+top: 0;
+
 }
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 90%;
-}
-.skills-content .right .js::before{
-    width: 50%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .sql::before{
-    width: 80%;
-}
-.skills-content .right .sqlserv::before{
-    width: 80%;
-}
-.skills-content .right .C::before{
-    width: 90%;
-}
-.skills-content .right .Cpp::before{
-    width: 60%;
-}
-.skills-content .right .cch::before{
-    width: 30%;
-}
-.skills-content .right .Python::before{
-    width: 70%;
-}
-.skills-content .right .django::before{
-    width: 70%;
-}
-.skills-content .right .git::before{
-    width: 60%;
+
+.countbar {
+    height: 5px;
+        background: #7c0101;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
 }
 
 
+
+
+.bbn{
+    text-align: left;
+  
+  position: absolute;
+  padding-top: -39px;
+  height: 0px;
+padding-left : 2%;
+  margin-left: 100%;
+
+    display: flex;
+    margin-bottom: 5px;
+    align-items: flex-end;
+  
+
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************/
 
 /* contact section styling */
 .contact{
@@ -789,7 +838,7 @@ footer span a:hover{
     color: #D8E2DC;
     position:relative;
     transition: all 0.5s ease;
-    bottom: 10px;
+    bottom: 12px;
     width: auto;
     height: auto;
   }
@@ -831,6 +880,7 @@ footer span a:hover{
     border: 5px solid #bc2a8d;
     box-shadow: 0 0 15px #bc2a8d;
     transition: all 0.5s ease;
+    
   }
   
 
@@ -988,3 +1038,9 @@ footer span a:hover{
     display: inline-block;
     margin: 100px auto;
 }
+
+
+
+
+
+
