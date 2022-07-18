@@ -1074,6 +1074,8 @@ footer span a:hover {
     color: #636363;
     width: 325px;
     font-size: 14px;
+    margin: auto;
+    padding: 10px;
 }
 
 .modal-confirm .modal-content {
