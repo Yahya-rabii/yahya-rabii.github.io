@@ -1,6 +1,5 @@
 <!-- made with care by yahya rabii aka NOXIDEUS-->
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,83 +7,182 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    <yahya_rb />
-  </title>
-
-
-  <style>
-    body {
-      font-family: Arial;
-      font-size: 1.5rem;
-      line-height: 150%;
-      background: url("images/banner1.jpg");
-      background-size: cover;
-      color: rgb(255, 255, 255);
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 1em;
-    }
-
-    .container h1 {
-      font-size: 2.2rem;
-    }
-
-    .container .instruction {
-      font-size: 1.8rem;
-      margin-bottom: 4rem;
-      font-style: initial;
-    }
-
-    .content {
-      margin-bottom: 4em;
-    }
-
-    .content p {
-      display: inline;
-      background-repeat: no-repeat;
-      transition: all 500ms ease-in-out;
-    }
-
-    .v8 p {
-      background-position: left;
-      background-size: 0% 100%;
-      background-image: linear-gradient(to right, #7c0101, #000000);
-      padding-bottom: 4px;
-      box-decoration-break: clone;
-      -webkit-box-decoration-break: clone;
-    }
-
-    .v8:hover p {
-      background-size: 100% 100%;
-    }
-
-    .yahya {
-
-      cursor: pointer;
-
-    }
-  </style>
-
-
+  <title>Document</title>
 </head>
 
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background: #c40e17;
+    background: -moz-linear-gradient(-45deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(-45deg, rgb(61, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgb(66, 0, 0) 0%, rgb(37, 37, 37) 100%);
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #eee;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: light;
+    color: rgb(255, 255, 255);
+  }
+
+  span a {
+    font-size: 18px;
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  span a:hover {
+    color: #fff;
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar {
+    margin-top: 3%;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+  .container h1 {
+    font-size: 2.2rem;
+  }
+
+  .container .instruction {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-style: initial;
+    color: #fff;
+  }
+
+  .content p {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+  }
+
+  .v8 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #7c0101, #000000);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .v8:hover p {
+    background-size: 100% 100%;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    .yahya {
+      width: 100%;
+      cursor: pointer;
+
+
+    }
+  }
+</style>
+
+
 <body>
-  <br>
-  <br>
-  <br>
+
+
+
+
+
+
 
   <div class="container">
-    <div class="instruction">HI EVERYONE</div>
-    <div class="content v8">
-      <p>As a software engineer, my goal is to change the world with inventions and solutions that influence everyone’s
-        lives ...</p>
+
+    <div class="instruction">HI EVERYONE MY NAME IS</div>
+
+    <div class="yahya"><a href="https://github.com/Yahya-rabii"><img src="images/Yahya Rabii.png" alt=""></a>
     </div>
-  </div>
-  <div class="yahya"><a href="https://github.com/Yahya-rabii"><img src="images/Yahya Rabii.png" alt=""></a>
+
+    <div class="content v8">
+      <h2>
+        <p> I'm a software engineer and my goal is to change the world with inventions and solutions that influence
+          everyone's lives ...</p>
+      </h2>
+    </div>
+
+
+    <div class="avatar">
+      <a href="https://github.com/Yahya-rabii">
+        <img src="https://yahya-rabii.github.io/images/profile-1.jpg" alt="yahya rabii" />
+      </a>
+
+    </div>
+    <p>visit me</p>
+
+
   </div>
 
 
