@@ -572,13 +572,17 @@ section .title::after {
 }
 
 .contact .contact-content .left .icons {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .contact .contact-content .row {
-    display: flex;
-    height: 65px;
+
+
+    text-align: left;
     align-items: center;
+    margin-bottom: 15px;
+
+
 }
 
 .contact .contact-content .row .info {
