@@ -11,7 +11,7 @@
 </head>
 
 <style>
-  body,
+   body,
   html {
     height: 100%;
     margin: 0;
@@ -100,15 +100,6 @@
     box-sizing: border-box;
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
   .container h1 {
     font-size: 2.2rem;
   }
@@ -116,6 +107,9 @@
   .container .instruction {
     font-size: 1.8rem;
     margin-bottom: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: center;
     font-style: initial;
     color: #fff;
   }
@@ -124,30 +118,58 @@
     display: inline;
     background-repeat: no-repeat;
     transition: all 500ms ease-in-out;
-  }
+}
 
-  .v8 p {
+.v8 p {
     background-position: left;
     background-size: 0% 100%;
     background-image: linear-gradient(to right, #7c0101, #000000);
     padding-bottom: 4px;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-  }
+}
 
-  .v8:hover p {
+.v8:hover p {
     background-size: 100% 100%;
+}
+
+  /* styles for small screens */
+
+
+.yahya {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .yahya img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
+
+/* styles for medium screens */
+@media only screen and (min-width: 600px) {
+.yahya {
+width: 100%;
+height: 10%;
+}
+}
+
+/* styles for large screens */
+@media only screen and (min-width: 1000px) {
+.yahya {
+width: 100%;
+margin-top: 5%;
+margin-bottom: 5%;
+height: 10%;
+  }
   }
 
 
-  @media only screen and (max-width: 480px) {
-    .yahya {
-      width: 100%;
-      cursor: pointer;
-
-
-    }
-  }
 </style>
 
 

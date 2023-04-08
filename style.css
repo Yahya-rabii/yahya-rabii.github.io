@@ -275,13 +275,14 @@ section .title::after {
 
 .about .about-content .left {
     width: 45%;
+ margin-bottom: 70px;
 }
 
 .about .about-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 60px;
 }
 
 .about .about-content .right {
